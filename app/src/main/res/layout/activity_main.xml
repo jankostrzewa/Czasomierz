@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="psychofizyka.czasomierz.MainActivity">
+
+    <Button
+        android:id="@+id/btnVibrate"
+        android:layout_width="368dp"
+        android:layout_height="120dp"
+        android:onClick="vibrateActivity"
+        android:text="Test dotyku"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="334dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnFlashScreen"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:id="@+id/btnSound"
+        android:layout_width="368dp"
+        android:layout_height="120dp"
+        android:text="Test dźwięku"
+        android:onClick="soundActivity"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="46dp"
+        android:layout_below="@+id/btnVibrate"
+        android:layout_alignStart="@+id/btnVibrate"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:id="@+id/btnFlashScreen"
+        android:layout_width="368dp"
+        android:layout_height="120dp"
+        android:text="Test wizualny"
+        android:onClick="flashScreenActivity"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="185dp"
+        android:layout_below="@+id/btnSound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFlashScreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Autor: Jan Kostrzewa \n @ Psychofizyka 2017"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+</RelativeLayout>
